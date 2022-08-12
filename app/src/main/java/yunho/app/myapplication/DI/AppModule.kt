@@ -22,8 +22,10 @@ internal val AppModule = module {
     //data
     single { getArticleDB(get()) }
     single { getArticleDao(get()) }
-    single { provideFirebaseDB() }
+    single { provideFirebaseDB(get(),get()) }
     single { ArticleAdapter() }
+    //activity
+    single { ArtcleaddActivity() }
     //repository
     single { articleRepository(get(), get()) }
     single { FirebaseRepository(get()) }

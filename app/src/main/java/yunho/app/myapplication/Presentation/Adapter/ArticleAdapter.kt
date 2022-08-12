@@ -19,6 +19,9 @@ class ArticleAdapter : RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
                 //thumb.setImageResource()
                 title.text = articleEntity.title
             }
+            binding.root.setOnClickListener {
+                listener(articleEntity)
+            }
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleAdapter.ViewHolder {

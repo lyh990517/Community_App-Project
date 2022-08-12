@@ -30,6 +30,7 @@ class MainActivity : BaseActivity<MainViewModel>() {
     }
 
     private fun initViews() {
+
         showFragment(HomeFragment())
         binding.bottomNav.run {
             setOnItemSelectedListener { item ->
