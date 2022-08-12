@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "699770237840",
+    "project_id": "everytime-project",
+    "storage_bucket": "everytime-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699770237840:android:a5636c17869524f24c7915",
+        "android_client_info": {
+          "package_name": "yunho.app.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699770237840-7epbru7d9anoujb0s7n4dk4vp6fiuvff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3ASWb2USSD-tHKHmScnlG5YW-5m1rldQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699770237840-7epbru7d9anoujb0s7n4dk4vp6fiuvff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

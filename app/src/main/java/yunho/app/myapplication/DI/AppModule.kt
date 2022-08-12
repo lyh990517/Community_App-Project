@@ -5,7 +5,11 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import yunho.app.myapplication.Data.LocalDB.getArticleDB
 import yunho.app.myapplication.Data.LocalDB.getArticleDao
+import yunho.app.myapplication.Data.RemoteDB.provideFirebaseDB
+import yunho.app.myapplication.Data.Repository.FirebaseRepository
 import yunho.app.myapplication.Data.Repository.articleRepository
+import yunho.app.myapplication.Presentation.Adapter.ArticleAdapter
+import yunho.app.myapplication.Presentation.View.ArtcleaddActivity
 import yunho.app.myapplication.Presentation.ViewModel.ChatViewModel
 import yunho.app.myapplication.Presentation.ViewModel.HomeViewModel
 import yunho.app.myapplication.Presentation.ViewModel.MainViewModel
@@ -18,8 +22,11 @@ internal val AppModule = module {
     //data
     single { getArticleDB(get()) }
     single { getArticleDao(get()) }
+    single { provideFirebaseDB() }
+    single { ArticleAdapter() }
     //repository
     single { articleRepository(get(), get()) }
+    single { FirebaseRepository(get()) }
     //usecase
 
     //viewmodel

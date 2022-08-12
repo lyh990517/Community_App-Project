@@ -8,6 +8,8 @@ data class articleEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val title: String,
     val content: String,
-    val image: String,
-    val time: String,
-)
+    val image: String = "",
+    val time: String = "",
+){
+    constructor() : this(-1,"","","","")
+}
